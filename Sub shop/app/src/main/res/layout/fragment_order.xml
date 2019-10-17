@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".OrderFragment">
+
+    <LinearLayout
+        android:id="@+id/order_fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/order_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/order_title"
+            style="@style/title_style" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/small_layout_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sandwich_type_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sandwich_type"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/second_title_size" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_layout_margin"
+                    android:entries="@array/sandwich_spinner_items" />
+
+                <TextView
+                    android:id="@+id/bread_type_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bread_type"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/second_title_size" />
+
+                <RadioGroup
+                    android:id="@+id/bread_type_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/white_bread_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_layout_margin"
+                        android:text="@string/white_bread"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:id="@+id/whole_wheat_radiobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_layout_margin"
+                        android:text="@string/whole_wheat_bread" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/toppings_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/toppings_text"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/second_title_size" />
+
+                <TextView
+                    android:id="@+id/topping_price_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/small_layout_margin"
+                    android:text="@string/topping_description"
+                    android:textSize="14sp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/toppings_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/Tomato"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/tomato"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/lettuce"
+                        app:layout_constraintTop_toBottomOf="@+id/bacon" />
+
+                    <CheckBox
+                        android:id="@+id/lettuce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lettuce"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/Tomato"
+                        app:layout_constraintEnd_toStartOf="@+id/Tomato"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <CheckBox
+                        android:id="@+id/olives"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/olives"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/bacon"
+                        app:layout_constraintStart_toStartOf="@+id/lettuce" />
+
+                    <CheckBox
+                        android:id="@+id/bacon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/bacon"
+                        app:layout_constraintStart_toEndOf="@+id/olives"
+                        app:layout_constraintStart_toStartOf="@+id/Tomato"
+                        app:layout_constraintTop_toBottomOf="@+id/mustard" />
+
+                    <CheckBox
+                        android:id="@+id/mayo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mayo"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/mustard"
+                        app:layout_constraintStart_toStartOf="@+id/olives" />
+
+                    <CheckBox
+                        android:id="@+id/mustard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/mustard"
+                        app:layout_constraintStart_toEndOf="@+id/mayo"
+                        app:layout_constraintStart_toStartOf="@+id/bacon"
+                        app:layout_constraintTop_toBottomOf="@+id/onion" />
+
+                    <CheckBox
+                        android:id="@+id/cheese"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cheese"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/onion"
+                        app:layout_constraintStart_toStartOf="@+id/mayo" />
+
+                    <CheckBox
+                        android:id="@+id/onion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/onion"
+                        app:layout_constraintStart_toEndOf="@+id/cheese"
+                        app:layout_constraintStart_toStartOf="@+id/mustard"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <Button
+                    android:id="@+id/order_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/big_margin"
+                    android:gravity="center"
+                    android:text="@string/pass_order" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">About Me</string>
+    <string name="name">Ahmed Dghaies</string>
+    <string name="star_image_description">This is a yellow star</string>
+    <string name="bio_text" >My name is Ahmed Dghaies,\n\n
+        I\'m 22 years old and currently I\'m a software engineer student at INSAT in Tunisia.\n\n
+        Experienced working in the information technology and services industry. Skilled in web application development, Spring Framework, .Net framework and mean full-stack.\n\n
+        Also active in my community, I held a lot of positions like vice president of INSAT Samsung academy during 2017-2018, Designer, team leader, and a member of multiple clubs and associations.\n\n
+        This is a description of my last internship:\n
+        --- Full Stack Web Developer and Team Leader ---\n
+        • Identified client needs and proposed possible solutions.\n
+        • Designed a web and a mobile application for a service station manager and workers.\n
+        • Collaborated within a team of 3 to organize and develop both of the applications.\n
+        • Practiced and applied DevOps principles.\n
+        • Documented the application modules in order to make it easier for the employees to learn how to use them.</string>
+    <string name="nickname_hint">What is your nickname?</string>
+    <string name="done_button">Done</string>
+</resources>

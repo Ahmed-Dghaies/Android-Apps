@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My First App</string>
+    <string name="editMessage">Enter a message</string>
+    <string name="buttonSend">Send</string>
+    <string name="titleForMessage">The message that you typed was:</string>
+    <string name="welcomeImage">A welcoming image for my first app</string>
+    <string name="welcomeMessage">Welcome to my first Android application</string>
+</resources>

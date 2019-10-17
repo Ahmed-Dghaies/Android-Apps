@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Ahmed Sub Par</string>
+    <string name="shop_name">Ahmed\'s Sub Par</string>
+    <string name="order_button">Order now!!</string>
+    <string name="order_history">Previous orders</string>
+    <string name="shop_image_desc">Shop front image</string>
+    <string name="order_title">Your Sub order</string>
+    <string name="sandwich_type">Sandwich type</string>
+    <string name="bread_type">Bread type</string>
+    <string name="toppings_text">Toppings</string>
+    <string name="topping_description">For each topping, add $0.50</string>
+    <string name="white_bread">White</string>
+    <string name="whole_wheat_bread">Whole wheat</string>
+    <string name="tomato">Tomato</string>
+    <string name="lettuce">Lettuce</string>
+    <string name="olives">Olives</string>
+    <string name="bacon">Bacon</string>
+    <string name="mayo">Mayo</string>
+    <string name="mustard">Mustard</string>
+    <string name="cheese">Cheese</string>
+    <string name="onion">Onion</string>
+    <string name="pass_order">Order</string>
+    <string name="receipt_title">Receipt</string>
+    <string name="done_button">Done</string>
+    <string-array name="sandwich_spinner_items">
+        <item>BBQ Sandwich $7.65</item>
+        <item>Philly Sandwich $8.0</item>
+        <item>Club Sandwich $9.25</item>
+        <item>Lobster roll $10.5</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="share_image_description">this is the photo to be shared</string>
+    <string name="open">Open</string>
+    <string name="share">Share</string>
+</resources>
