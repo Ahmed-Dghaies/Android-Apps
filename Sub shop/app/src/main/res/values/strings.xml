@@ -34,4 +34,6 @@
     <string name="share_image_description">this is the photo to be shared</string>
     <string name="open">Open</string>
     <string name="share">Share</string>
+    <string name="date">Date</string>
+    <string name="price">Price</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.example.ahmedsubpar
 
+import android.app.Application
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
@@ -8,7 +9,9 @@ import androidx.databinding.DataBindingUtil
 import com.example.ahmedsubpar.databinding.FragmentOrderBinding
 import androidx.navigation.findNavController
 import android.widget.RadioButton
+import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.ui.NavigationUI
+import java.util.*
 
 
 /**
@@ -79,7 +82,13 @@ class OrderFragment : Fragment() {
                 if (extra != null) orderdetails = extra
             }
 
+            var histViewModel = ViewModelProviders.of(this).get(HistViewModel::class.java)
+            histViewModel.insertHistory(
+                // first parameter is the primary key
+               OrderHistory(null, orderdetails.sandwich_type,orderdetails.bread_type,orderdetails.total_price,  Date())
+            )
             view.findNavController().navigate(OrderFragmentDirections.actionOrderFragmentToReceiptFragment(orderdetails))
+
         }
 
 

@@ -56,8 +56,8 @@ class OrderTest {
 
         //testing the check boxes
         toppings.forEach {
-            onView(it?.let { it1 -> withId(it1) }).perform(click())
-            onView(it?.let { it1 -> withId(it1) }).check(matches(isChecked()))
+            onView(it.let { it1 -> withId(it1) }).perform(click())
+            onView(it.let { it1 -> withId(it1) }).check(matches(isChecked()))
         }
     }
 

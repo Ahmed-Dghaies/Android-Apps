@@ -29,6 +29,10 @@ class WelcomeFragment : Fragment() {
             view.findNavController().navigate(R.id.action_welcomeFragment3_to_orderFragment)
         }
 
+        binding.historyButton.setOnClickListener { view: View ->
+            view.findNavController().navigate(R.id.action_welcomeFragment_to_historyFragment)
+        }
+
         return binding.root
     }
     }

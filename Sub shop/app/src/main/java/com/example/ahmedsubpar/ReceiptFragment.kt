@@ -74,7 +74,7 @@ class ReceiptFragment : Fragment() {
         inflater.inflate(R.menu.share_menu, menu)
         if (null == getShareIntent().resolveActivity(activity!!.packageManager)) {
             // hide the menu item if it doesn't resolve
-            menu?.findItem(R.id.share_item)?.isVisible = false
+            menu.findItem(R.id.share_item)?.isVisible = false
         }
     }
 

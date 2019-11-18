@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_welcomeFragment3_to_orderFragment"
             app:destination="@id/orderFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
     </fragment>
     <fragment
         android:id="@+id/orderFragment"
@@ -36,5 +39,14 @@
         <argument
             android:name="order_details"
             app:argType="com.example.ahmedsubpar.OrderDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.ahmedsubpar.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
     </fragment>
 </navigation>
